@@ -1,0 +1,364 @@
+body {
+  background: #F7E6B7;
+  font-family: 'Fredoka One', 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.sentimint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 24px 0 12px;
+}
+
+.sentimint-logo {
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #444;
+  font-family: 'Fredoka One', 'Comic Sans MS', cursive, sans-serif;
+  cursor: pointer;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.sentimint-profile {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 2px;
+}
+
+.sentimint-profile-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #F6A94A;
+  display: inline-block;
+  border: 2px solid #fff;
+  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/user-male-circle.png');
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main {
+  padding: 0 0 0 0;
+}
+
+.sentimint-title {
+  text-align: center;
+  font-size: 2.3em;
+  margin: 28px 157px 32px ;
+  color: #444;
+  font-family: 'Fredoka One', 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.sentimint-circles-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 38px;
+  margin-bottom: 30px;
+}
+
+.sentimint-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.18em;
+  font-family: inherit;
+  cursor: pointer;
+  color: #444;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.1s;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sentimint-circle-new {
+  background: #F6A94A;
+}
+.sentimint-circle-add {
+  background: #F6B26B;
+}
+.sentimint-circle-list {
+  background: #F6B6B6;
+}
+
+.sentimint-bottom-box {
+  background: #F6A94A;
+  border-radius: 24px;
+  height: 80px;
+  margin: 32px auto 0 auto;
+  max-width: 80%;
+  min-width: 500px;
+  width: 80%;
+}
+
+footer {
+  width: 100vw;
+  background: transparent;
+  color: #444;
+  text-align: center;
+  padding: 0.7rem 0 0.5rem 0;
+  font-size: 1.05rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  font-family: 'Fredoka One', 'Comic Sans MS', cursive, sans-serif;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .sentimint-container {
+    border-width: 2px;
+    max-width: 100vw;
+  }
+  .sentimint-circles-row {
+    gap: 12px;
+  }
+  .sentimint-circle {
+    width: 110px;
+    height: 110px;
+    font-size: 0.9em;
+  }
+  .sentimint-bottom-box {
+    min-width: 200px;
+    height: 50px;
+  }
+}
+.sentimint-container {
+  background: #F7E6B7;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+main {
+  padding: 0;
+}
+
+.sentimint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 24px 0 12px;
+}
+
+.sentimint-logo {
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #444;
+  font-family: 'Fredoka One', 'Comic Sans MS', cursive, sans-serif;
+  cursor: pointer;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.sentimint-profile {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 2px;
+}
+
+.sentimint-profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F6A94A;
+  display: inline-block;
+  border: 2px solid #fff;
+  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/user-male-circle.png');
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sentimint-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 18px 0 18px 0;
+  color: #444;
+  font-family: 'Fredoka One', 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.capsule-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.capsule-input-box {
+  background: #F6A94A;
+  border-radius: 18px;
+  padding: 16px 18px 12px 18px;
+  margin-bottom: 14px;
+  width: 95%;
+  font-size: 1em;
+  color: #444;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.capsule-input-box label {
+  font-weight: bold;
+  font-size: 1em;
+  color: #444;
+  font-family: inherit;
+}
+
+.capsule-input-box input[type="text"],
+.capsule-input-box input[type="date"] {
+  width: 95%;
+  margin: 6px 0 12px 0;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #e0cfae;
+  font-size: 1em;
+  font-family: inherit;
+  background: #fff9f3;
+  color: #444;
+  box-sizing: border-box;
+}
+
+.camera-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.camera-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F6E6A4;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #e0cfae;
+  text-decoration: none;
+  transition: filter 0.2s;
+}
+
+.camera-link:hover {
+  filter: brightness(1.1);
+}
+
+.camera-icon {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url('https://img.icons8.com/ios-filled/50/000000/camera--v1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo-display-box {
+  background: #F6B6B6;
+  border-radius: 18px;
+  width: 95%;
+  height: 120px;
+  margin: 10px 0 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-family: inherit;
+  font-size: 1.1em;
+}
+
+.capsule-bottom-box {
+  background: #F6A94A;
+  border-radius: 18px;
+  width: 95%;
+  margin: 10px 0 12px 0;
+  padding: 8px 12px;
+  color: #444;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.mood-label {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.mood-emojis {
+  font-size: 1.1em;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.capsule-bottom-box textarea {
+  width: 98%;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #e0cfae;
+  font-size: 1em;
+  font-family: inherit;
+  background: #fff9f3;
+  color: #444;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.save-btn {
+  margin-top: 8px;
+  background: #F6B6B6;
+  color: #444;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 22px;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 0.2s;
+  float: right;
+  align-self: flex-end;
+}
+
+.save-btn:hover {
+  filter: brightness(1.1);
+}
+
+footer {
+  width: 100vw;
+  background: transparent;
+  color: #444;
+  text-align: center;
+  padding: 0.7rem 0 0.5rem 0;
+  font-size: 1.05rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  font-family: 'Fredoka One', 'Comic Sans MS', cursive, sans-serif;
+  box-sizing: border-box;
+  pointer-events: none;
+}

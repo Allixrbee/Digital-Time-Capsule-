@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create a new Capsule</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div class="sentimint-container">
+    <div class="sentimint-header">
+      <button class="sentimint-logo" onclick="location.href='index.html'">Sentimint</button>
+      <button class="sentimint-profile" onclick="location.href='profile.html'" aria-label="Profile">
+        <span class="sentimint-profile-icon"></span>
+      </button>
+    </div>
+    <main>
+      <h1 class="sentimint-title">Create a new Capsule</h1>
+      <form class="capsule-form" id="capsuleForm" autocomplete="off">
+        <div class="capsule-input-box">
+          <label>
+            Capsule Name:<br>
+            <input type="text" name="name" required>
+          </label><br>
+          <label>
+            Capsule Release Date:<br>
+            <input type="date" name="releaseDate" required>
+          </label><br>
+          <label>
+            Capsule Goal:<br>
+            <input type="text" name="goal" required>
+          </label>
+        </div>
+        <div class="camera-icon-wrapper">
+          <a href="camera.html" class="camera-link" title="Take a photo">
+            <span class="camera-icon"></span>
+          </a>
+        </div>
+        <div class="photo-display-box">
+          Photo Display
+        </div>
+        <div class="capsule-bottom-box">
+          <label class="mood-label">
+            Mood Tracker:
+            <span class="mood-emojis">😃 😁 😊 🙂 😐 😕 😢 😭 😡 😱 😴 😇 🤔 😍 🤩 😎 🥳 🤗</span>
+          </label>
+          <br>
+          <label>
+            Reflection:<br>
+            <textarea name="reflection" rows="2"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="save-btn">Save</button>
+      </form>
+    </main>
+  </div>
+  <footer>
+    <small>&copy; 2025 Allix Blackley.</small>
+  </footer>
+  <script>
+    // Example: Save form data to localStorage (replace with your DB logic)
+    document.getElementById('capsuleForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = {
+        name: this.name.value,
+        releaseDate: this.releaseDate.value,
+        goal: this.goal.value,
+        reflection: this.reflection.value
+      };
+      localStorage.setItem('capsuleDraft', JSON.stringify(data));
+      alert('Capsule saved! (Replace this with your real database logic)');
+      // Optionally redirect or clear the form here
+    });
+  </script>
+</body>
+</html>
